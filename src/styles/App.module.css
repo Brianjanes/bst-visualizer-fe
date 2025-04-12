@@ -1,0 +1,66 @@
+.container {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.header {
+  background-color: var(--background);
+  padding: 1.5rem 2rem;
+  position: relative;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: var(--text-primary);
+  opacity: 0.06;
+}
+
+.headerContent {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 3rem;
+  letter-spacing: -0.03em;
+  opacity: 0.9;
+}
+
+.nav {
+  display: flex;
+  gap: 3rem;
+  opacity: 0.99;
+}
+
+.navLink {
+  font-size: 1.125rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+  transition: opacity 0.2s ease;
+  opacity: 0.45;
+}
+
+.navLink:hover {
+  opacity: 0.75;
+}
+
+.activeLink {
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.mainContent {
+  min-height: calc(100vh - 200px);
+  padding: 1rem 2rem;
+  opacity: 0.99;
+}
